@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     }
     override func viewDidLoad() {
     super.viewDidLoad()
-        os_log("I just Loaded")
+        os_log("I just Loaded") 
   
 }
 }
