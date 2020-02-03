@@ -15,48 +15,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rNK-JX-4Hw">
-                                <rect key="frame" x="159" y="250" width="97" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dOX-xG-jcX">
+                                <rect key="frame" x="186" y="239" width="25" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wbU-TD-92b">
+                                <rect key="frame" x="150" y="278" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="New Question"/>
                                 <connections>
-                                    <action selector="showNextQuestionWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YFt-Js-mjG"/>
+                                    <action selector="showNextQuestionWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x7M-t5-3j4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nHQ-pv-TfZ">
-                                <rect key="frame" x="159" y="350" width="88" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r5f-Kc-2GZ">
+                                <rect key="frame" x="186" y="438" width="25" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MiA-aQ-46B">
+                                <rect key="frame" x="154.5" y="467" width="88" height="30"/>
                                 <state key="normal" title="View Answer"/>
                                 <connections>
-                                    <action selector="showNextAnswerWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7b9-k7-evY"/>
+                                    <action selector="showNextAnswerWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Dh-FC-Uw1"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDp-CX-9kO">
-                                <rect key="frame" x="182" y="221" width="59" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8YZ-bz-Qux">
-                                <rect key="frame" x="182" y="321" width="117" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="nHQ-pv-TfZ" firstAttribute="centerX" secondItem="zDp-CX-9kO" secondAttribute="centerX" id="6Do-O2-nYd"/>
-                            <constraint firstItem="nHQ-pv-TfZ" firstAttribute="top" secondItem="8YZ-bz-Qux" secondAttribute="bottom" constant="8" id="7eE-7g-j9Q"/>
-                            <constraint firstItem="8YZ-bz-Qux" firstAttribute="top" secondItem="rNK-JX-4Hw" secondAttribute="bottom" constant="41" id="NL9-s2-6a9"/>
-                            <constraint firstItem="zDp-CX-9kO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="177" id="UJC-Rc-EjP"/>
-                            <constraint firstItem="rNK-JX-4Hw" firstAttribute="top" secondItem="zDp-CX-9kO" secondAttribute="bottom" constant="8" id="jHh-es-gbU"/>
-                            <constraint firstItem="rNK-JX-4Hw" firstAttribute="centerX" secondItem="zDp-CX-9kO" secondAttribute="centerX" id="npu-Ry-vjx"/>
-                            <constraint firstItem="8YZ-bz-Qux" firstAttribute="centerX" secondItem="zDp-CX-9kO" secondAttribute="centerX" id="pbT-cI-Lal"/>
+                            <constraint firstItem="MiA-aQ-46B" firstAttribute="centerX" secondItem="dOX-xG-jcX" secondAttribute="centerX" id="2Dg-LH-gHh"/>
+                            <constraint firstItem="MiA-aQ-46B" firstAttribute="top" secondItem="r5f-Kc-2GZ" secondAttribute="bottom" constant="8" id="2Fl-iu-pS1"/>
+                            <constraint firstItem="r5f-Kc-2GZ" firstAttribute="centerX" secondItem="dOX-xG-jcX" secondAttribute="centerX" id="CzE-cx-muw"/>
+                            <constraint firstItem="wbU-TD-92b" firstAttribute="top" secondItem="dOX-xG-jcX" secondAttribute="bottom" constant="18" id="MBt-i2-LgD"/>
+                            <constraint firstItem="r5f-Kc-2GZ" firstAttribute="top" secondItem="wbU-TD-92b" secondAttribute="bottom" constant="130" id="NqH-vS-uPX"/>
+                            <constraint firstItem="dOX-xG-jcX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="195" id="QMM-nG-rDw"/>
+                            <constraint firstItem="wbU-TD-92b" firstAttribute="centerX" secondItem="dOX-xG-jcX" secondAttribute="centerX" id="p9L-Jp-vJE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="answerLabel" destination="8YZ-bz-Qux" id="a31-TV-VIj"/>
-                        <outlet property="questionLabel" destination="zDp-CX-9kO" id="bH2-OD-any"/>
+                        <outlet property="answerLabel" destination="r5f-Kc-2GZ" id="4FO-dx-fhk"/>
+                        <outlet property="questionLabel" destination="dOX-xG-jcX" id="u5A-Ne-ShQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
