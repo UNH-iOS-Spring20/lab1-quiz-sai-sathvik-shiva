@@ -7,14 +7,21 @@
 //
 
 import UIKit
+import os
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    @IBOutlet var questionLabel:UILabel!
+    @IBOutlet var answerLabel:UILabel!
+    @IBAction func showNextQuestion (_sender:UIButton){
+        os_log("showing next question")
     }
-
-
+    @IBAction func showNextAnswer(_sender:UIButton){
+        os_log("showing next answer")
+    }
+    override func viewDidLoad() {
+    super.viewDidLoad()
+        os_log("I just Loaded")
+  
+}
 }
 
